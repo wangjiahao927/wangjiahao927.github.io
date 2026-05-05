@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Итоги прошедшей недели обучения"
+date: 2026-05-05
 categories: [personal]
 ---
 
