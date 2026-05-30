@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>多语言网站</title>
+    <style>
+        .chinese { display: block; }
+        .english { display: none; }
+        .russian { display: none; }
+        button { margin: 5px; padding: 5px 15px; font-size: 16px; cursor: pointer; }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <button onclick="showChinese()">中文</button>
+    <button onclick="showEnglish()">English</button>
+    <button onclick="showRussian()">Русский</button>
+
+    <!-- 中文内容 -->
+    <div id="cn" class="chinese">
+        <h1>欢迎来到我的网站</h1>
+        
+        <h2>📅 过去一周回顾</h2>
+        <p>过去一周，我学习了如何制作双语网站，还学会了使用GitHub Pages。虽然刚开始不太懂，但慢慢就明白了。</p>
+        
+        <h2>🎨 我的爱好：摄影</h2>
+        <p>我喜欢用手机拍照，记录生活中的美好瞬间。风景、食物、人像都是我喜欢的题材。</p>
+    </div>
+
+    <!-- 英文内容 -->
+    <div id="en" class="english">
+        <h1>Welcome to My Website</h1>
+        
+        <h2>📅 Past Week Review</h2>
+        <p>This past week, I learned how to make a bilingual website and how to use GitHub Pages. It was confusing at first, but I gradually understood.</p>
+        
+        <h2>🎨 My Hobby: Photography</h2>
+        <p>I enjoy taking photos with my phone to capture beautiful moments in life. Landscapes, food, and portraits are all my favorite subjects.</p>
+    </div>
+
+    <!-- 俄语内容 -->
+    <div id="ru" class="russian">
+        <h1>Добро пожаловать на мой сайт</h1>
+        
+        <h2>📅 Обзор прошедшей недели</h2>
+        <p>На прошлой неделе я научился создавать двуязычный сайт, а также освоил использование GitHub Pages. Сначала было непонятно, но постепенно я во всём разобрался.</p>
+        
+        <h2>🎨 Моё хобби: Фотография</h2>
+        <p>Мне нравится фотографировать на телефон, чтобы запечатлеть прекрасные моменты жизни. Пейзажи, еда и портреты — мои любимые жанры.</p>
+    </div>
+
+    <script>
+        function showChinese() {
+            document.getElementById('cn').style.display = 'block';
+            document.getElementById('en').style.display = 'none';
+            document.getElementById('ru').style.display = 'none';
+        }
+        function showEnglish() {
+            document.getElementById('cn').style.display = 'none';
+            document.getElementById('en').style.display = 'block';
+            document.getElementById('ru').style.display = 'none';
+        }
+        function showRussian() {
+            document.getElementById('cn').style.display = 'none';
+            document.getElementById('en').style.display = 'none';
+            document.getElementById('ru').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
